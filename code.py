@@ -65,8 +65,8 @@ class MNISTEncoder(object):
 
 
 # Define magnet loss parameters
-m = 2
-d = 2
+m = 8
+d = 8
 k = 5
 alpha = 0.5
 batch_size = m * d
@@ -77,7 +77,7 @@ y = mnist.train.labels
 
 # Define model and training parameters
 emb_dim = 2
-n_epochs = 1
+n_epochs = 12
 epoch_steps = int(ceil(float(X.shape[0]) / batch_size)) 
 n_steps = epoch_steps * n_epochs
 cluster_refresh_interval = epoch_steps
